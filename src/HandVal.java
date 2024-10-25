@@ -8,9 +8,10 @@ public enum HandVal {
     FLUSH(5),
     FULL_HOUSE(6),
     POKER(7),
-    STRAIGHT_FLUSH(8),
-    ROYAL_FLUSH(9),
-    NOT_VALID(10);
+    FOUR_OF_A_KIND(8),
+    STRAIGHT_FLUSH(9),
+    ROYAL_FLUSH(10),
+    NOT_VALID(11);
 
     private final int value;
 
