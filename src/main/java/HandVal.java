@@ -1,4 +1,6 @@
-// HandVal corresponds to Texas Hold'em poker hand values
+package main.java;
+
+// main.java.HandVal corresponds to Texas Hold'em poker hand values
 public enum HandVal {
     HIGH_CARD(0),
     PAIR(1),
