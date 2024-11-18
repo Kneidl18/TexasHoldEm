@@ -10,7 +10,7 @@ import (
 const fileName = "Hands_to_be_tested_without_duplicates.txt"
 
 // testHand validates that the hand's computed value matches the expected value
-func testHand(expected string, hand *Hand) {
+func testHandMain(expected string, hand *Hand) {
 	if hand.HandValue.String() != expected {
 		panic(fmt.Sprintf("Test failed! Expected: %s, Got: %s", expected, hand.HandValue.String()))
 	}
@@ -60,7 +60,7 @@ func main() {
 	for handName, hands := range dictHands {
 		fmt.Printf("Hand: %s\n", handName)
 		for _, hand := range hands {
-			testHand(handName, hand)
+			testHandMain(handName, hand)
 		}
 	}
 
